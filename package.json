@@ -1,0 +1,23 @@
+{
+  "name": "compound-v2-yield-farming",
+  "version": "1.0.0",
+  "description": "Leveraged yield farming smart contract for Compound V2 based protocols using Balancer Flash Loan",
+  "scripts": {
+    "test": "REPORT_GAS=true npx hardhat test test/CompoundV2YieldFarm.ts",
+    "deploy": "npx hardhat run --network arb-mainnet scripts/deploy.ts"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.2",
+    "alchemy-sdk": "^2.8.3",
+    "dotenv": "^16.3.1",
+    "hardhat": "^2.14.0",
+    "hardhat-abi-exporter": "^2.10.1"
+  },
+  "dependencies": {
+    "@balancer-labs/v2-interfaces": "^0.4.0",
+    "@openzeppelin/contracts": "^4.8.3",
+    "@uniswap/v3-core": "^1.0.1",
+    "@uniswap/v3-periphery": "^1.4.3"
+  }
+}
